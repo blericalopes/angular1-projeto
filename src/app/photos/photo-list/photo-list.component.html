@@ -10,3 +10,8 @@
 </div>
 
 <pp-photos [photos]="photos | filterByDescription: filter"></pp-photos>
+
+<pp-load-button 
+    (click)="load()"
+    [hasMore]="hasMore">
+</pp-load-button>
